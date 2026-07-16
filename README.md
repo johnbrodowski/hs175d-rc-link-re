@@ -200,6 +200,19 @@ Finally, the whole sequence was lifted out of a serial terminal and driven from 
 with no manual keypresses and the factory controller in a drawer: a self-contained,
 end-to-end **remote bypass**.
 
+A companion **Android app** (.NET MAUI) drives the same drone over WiFi — live
+telemetry, gimbal control, and a low-latency (MediaCodec-direct) RTSP video pipeline —
+independent of the RC-link work above but built on the same protocol reverse
+engineering.
+
+![RE Studio desktop app](media/re-studio-screenshot.png)
+*The desktop control/debug application — live telemetry, video, UART/logcat capture,
+and the RC-link impersonator controls, all in one tool.*
+
+![Android app](media/android-app-screenshot.png)
+*The companion Android app, driving the drone over WiFi with a custom low-latency
+video pipeline.*
+
 ---
 
 ## 4. Results at a glance
